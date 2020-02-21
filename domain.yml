@@ -1,0 +1,66 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - order
+  - offer
+  - choose
+  - thank_you
+  - ok
+
+actions:
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- order_food
+- offer_applied
+- utter_choose
+- utter_thank_you
+- utter_ok
+responses:
+  utter_greet:
+  - text: "Hey!"
+  
+  
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  
+  utter_order_food:
+  - text: "Choose a restaurant"
+  
+
+  utter_offer_applied:
+  - text: "There is fifty percent offer for the first 3 orders"
+  
+  utter_choose:
+  - text: "Your order has been placed and it will arrive in 30 minutes"
+  
+  utter_thank_you:
+  - text: "My Pleasure"
+  
+  utter_ok:
+  - text: "Bye"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
